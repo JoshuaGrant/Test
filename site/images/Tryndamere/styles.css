@@ -1,0 +1,583 @@
+/* Temp pvpnet bar performance fix in Chrome Windows */
+#pvpnet{
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+/*  modifies the position of the new header used with LolBar  */
+body.small-header-noplay #header {
+  height: 180px;
+  top: 20px;
+}
+
+/* Global */
+/* ================================================================================================================== */
+.section-no-bg {
+  position: absolute;
+  max-width: 1000px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin-left: -500px;
+}
+
+/* Error page style */
+/* ================================================================================================================== */
+.error-header-primary {
+    font-size: 3.23em;
+    font-family: "Adobe Garamond Pro",  Garamond,  Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    line-height: 1em;
+    background: transparent;
+    color: #ff9c00;
+    border: 0;
+    height: auto;
+    margin: 0 0 5px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.error-header-secondary {
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: "Adobe Garamond Pro",  Garamond,  Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    color: #fbd989;
+}
+.error-message {
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+
+/* Filter Styles */
+/* ================================================================================================================== */
+.filter label {
+  float: right;
+  width: 95px;
+}
+
+/* Champion Styles */
+/* ================================================================================================================== */
+#champions-filter-header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#champions-filter-header nav input {
+  width: 250px;
+}
+.champion-list-item {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+.champion-list-item .subtitle {
+  margin-top: 0;
+  font-size: 16px;
+}
+.champion-list-item .tags {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #77787b;
+}
+.champion-list-item .featured {
+  font-size: 13px;
+}
+.champion-list-item .simple-border {
+  width: 100%; /* needed to fix a bug in IE8 */
+}
+.champion-list-item .img {
+  width: 129px;
+  height: 234px;
+}
+
+.champion-details {
+  height: 257px;
+  position: relative;
+}
+
+.info-container {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+}
+.info-container > * {
+  padding-top: 20px;
+}
+.info-bar {
+  position: relative;
+  height: 28px;
+  width: 105px;
+}
+.info-bar img {
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.info-bar .bar {
+  background: transparent url(resources/images/champions/info-sprite.png) repeat-x 0 -115px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  right: 4px;
+  height: 23px;
+  z-index: 1;
+}
+.info-bar .bar .fill {
+  background: transparent url(resources/images/champions/info-sprite.png) repeat-x 0 0;
+  height: 23px;
+}
+.info-defense .bar .fill {
+  background-position: 0 0;
+}
+.info-attack .bar .fill {
+  background-position: 0 -23px;
+}
+.info-magic .bar .fill {
+  background-position: 0 -46px;
+}
+.info-difficulty .bar .fill {
+  background-position: 0 -92px;
+}
+
+.champion-grid li div {
+  text-align: center;
+}
+.champion-grid li div h3 {
+  font-size: 100%;
+  margin-top: 5px;
+}
+.champion-grid li div .content-border a {
+  display: inline-block;
+  height: 81px;
+  width: 81px;
+}
+.champion-grid li div .content-border a .img,
+.champion-grid li div .content-border a img {
+  height: 81px;
+  width: 81px;
+  max-width: none;
+}
+
+#champion-list-container {
+  display: none;
+}
+#champion-list {
+  margin-top: 20px;
+}
+
+#filter {
+  margin-top: 20px;
+}
+
+.grid-button.active,
+.list-button.active {
+  background-position: -255px -30px
+}
+
+/* Mastery Styles */
+/* ================================================================================================================== */
+.riot-mastery-tree-container {
+  padding: 10px 0;
+}
+.riot-mastery-tier .gs-container {
+  overflow: visible;
+}
+.riot-mastery-tier {
+  margin: 10px 7px 0 7px;
+}
+.riot-mastery-tier:first-child {
+  margin-top: 0;
+}
+.riot-mastery {
+  text-align: center;
+  position: relative;
+}
+.riot-mastery .img {
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.riot-mastery .img {
+  display: none;
+}
+.riot-mastery .img-gray {
+  display: block;
+}
+.riot-mastery .riot-mastery-point-container {
+  position: absolute;
+  right: 9px;
+  bottom: 3px;
+  border: 1px solid #a1a2a2;
+  color: #fff;
+  padding: 3px 5px 0 5px;
+  background-color: #262626;
+  font-size: 10px;
+  line-height: 10px;
+  z-index: 2;
+}
+.riot-mastery .content-border {
+  padding: 2px;
+}
+.riot-mastery-available .img,
+.riot-mastery-maxxed .img,
+.riot-mastery-points .img {
+  display: block;
+}
+.riot-mastery-available .img-gray,
+.riot-mastery-maxxed .img-gray,
+.riot-mastery-points .img-gray {
+  display: none;
+}
+
+.riot-mastery-keystone-floating {
+  padding-left: 70px;
+}
+
+.riot-mastery-maxxed .content-border {
+  background-color: #e7ae00;
+}
+.riot-mastery-maxxed .riot-mastery-point-container {
+  border-color: #ffd800;
+  color: #ffd800;
+}
+.riot-mastery-available .content-border,
+.riot-mastery-points .content-border {
+  background-color: #3e8c00;
+}
+.riot-mastery-available .riot-mastery-point-container,
+.riot-mastery-points .riot-mastery-point-container {
+  border-color: #6cdf0f;
+  color: #6cdf0f;
+}
+
+.riot-mastery .riot-mastery-prereq {
+  width: 9px;
+  position: absolute;
+  left: 28px;
+  background: transparent url("resources/images/mastery-arrow-sprite.jpg") repeat-y;
+  z-index: 1;
+}
+.riot-mastery .riot-mastery-prereq-1 {
+  height: 19px;
+  top: -18px;
+}
+.riot-mastery .riot-mastery-prereq-2 {
+  height: 90px;
+  top: -89px;
+}
+.riot-mastery-available .riot-mastery-prereq {
+  background-position: -9px 0;
+}
+.riot-mastery-maxxed .riot-mastery-prereq {
+  background-position: -18px 0;
+}
+.riot-mastery-tooltip {
+  color: #fff;
+}
+.riot-mastery-tooltip h4 {
+  color: #fff;
+}
+.riot-mastery-tooltip .rank {
+  color: #6cdf0f;
+  margin-bottom: 10px;
+}
+.riot-mastery-tooltip.maxed .rank {
+  color: #fdfe04;
+}
+.riot-mastery-tooltip .next-rank h4 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.riot-mastery-tooltip p {
+  margin-top: 0;
+}
+.riot-mastery-tooltip .requires {
+  margin-bottom: 10px;
+  color: #f00;
+}
+
+/* Rune Styles */
+/* ================================================================================================================== */
+#rune-filter .gray-stone {
+  height: 100%;
+}
+#runes nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#runes nav input {
+  width: 250px;
+}
+
+/* Spell Styles */
+/* ================================================================================================================== */
+.spell-name > * {
+  float: left;
+  margin-right: 10px;
+}
+.spells tr td {
+  vertical-align: top;
+}
+
+/* Item Styles */
+/* ================================================================================================================== */
+.gs-vertical-sync .gray-stone {
+  height: 100%;
+}
+
+#item-grid-content li div h3 {
+  height: 26px;
+}
+
+#items-filter-header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#items-filter-header nav input {
+  width: 250px;
+}
+.item-name > * {
+  float: left;
+  margin-right: 10px;
+}
+.item-name h4 {
+  width: 113px;
+}
+#item-list-content td {
+  vertical-align: top;
+}
+#item-grid {
+  margin-top: 20px;
+}
+#item-list {
+  display: none;
+  margin-top: 20px;
+}
+/* grid */
+/************************/
+
+.item-grid li {
+  text-align: center;
+  box-sizing: border-box;
+}
+.item-grid > li > * {
+  height: 141px;
+}
+.item-grid > li > * > p {
+  margin: 5px 0 0 0;
+  display: block !important;
+}
+.item-grid > li > * > .content-border > * {
+  vertical-align: bottom;
+}
+
+.champion-grid li {
+  text-align: center;
+  box-sizing: border-box;
+}
+.champion-grid > li > * > p {
+  margin: 5px 0 0 0;
+  display: block !important;
+}
+.champion-grid > li > * > .content-border > * {
+  vertical-align: bottom;
+}
+
+/*  fixes the item grid lists, ensuring that text does not wrap to 3 lines unless it really has to. */
+.grid-list.content-center > li > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*  fixes the height of names in grid-lists to ensure that the grid doesn't break due to variation in the height of the name. */
+.grid-list .item-name {
+  font-family: "Adobe Garamond Pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  margin-top: 0.2em;
+  line-height: 1.1em;
+  height: 2.2em; /*  double the line-height  */
+  display: block !important;
+}
+  .i18n-cs .grid-list .item-name,
+  .i18n-el .grid-list .item-name,
+  .i18n-tr .grid-list .item-name,
+  .i18n-pl .grid-list .item-name,
+  .i18n-pt .grid-list .item-name,
+  .i18n-tr .grid-list .item-name,
+  .i18n-ro .grid-list .item-name,
+  .i18n-ru .grid-list .item-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+/*  for champion grid lists we will force the name to fit on a single line instead of forcing a height of 2 lines(as done for items) */
+.grid-list .champ-name {
+  font-family: "Adobe Garamond Pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  margin-top: 0.2em;
+  display: block !important;
+  white-space: nowrap;
+}
+  .i18n-cs .grid-list .champ-name,
+  .i18n-el .grid-list .champ-name,
+  .i18n-tr .grid-list .champ-name,
+  .i18n-pl .grid-list .champ-name,
+  .i18n-pt .grid-list .champ-name,
+  .i18n-tr .grid-list .champ-name,
+  .i18n-ro .grid-list .champ-name,
+  .i18n-ru .grid-list .champ-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+.grid-list .item-name a,
+.grid-list .champ-name a {
+  text-decoration: none;
+}
+
+
+.aura-passive,
+.unique-passive,
+.passive,
+.unique-active,
+.item-secondary {
+  color: #e3842a;
+  font-weight: bold;
+}
+
+.cost span {
+  font-weight: bold;
+}
+.cost div {
+  background: transparent url("resources/images/coin.png") no-repeat left 3px;
+  padding-left: 17px;
+}
+
+/*  Summoner's Code styles  */
+/* ================================================================================================================== */
+.big-numbered-list {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  line-height: 78px;
+  font-size: 40px;
+  border-radius: 40px;
+  font-family: "Adobe Garamond Pro", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  color: white;
+  text-align: center;
+  background: rgb(17, 17, 17);
+  border: 4px solid rgb(17, 17, 17);
+  box-shadow: inset 0 0 4px 0px white;
+}
+  .i18n-cs .big-numbered-list,
+  .i18n-el .big-numbered-list,
+  .i18n-tr .big-numbered-list,
+  .i18n-pl .big-numbered-list,
+  .i18n-pt .big-numbered-list,
+  .i18n-tr .big-numbered-list,
+  .i18n-ro .big-numbered-list,
+  .i18n-ru .big-numbered-list {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+
+ul.arrow-bullets {
+    list-style-image: url("resources/images/bullet.png");
+}
+
+/*  LolKit styles  */
+/* ================================================================================================================== */
+table.table .no-results {
+  text-align: center;
+}
+
+.default-2-col.gs-grid>*:nth-child(2n+1) {
+  clear: both;
+}
+
+.default-3-col.gs-grid>*:nth-child(3n+1) {
+  clear: both;
+}
+
+
+/*  Banner styles  */
+/* ================================================================================================================== */
+.graphic-content {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+img.graphic-content-background {
+  max-width: 100%;
+  display: block;
+  float: left;
+  margin-right: -100%;
+  margin-bottom: -100%;
+}
+.graphic-content-fullbg img.graphic-content-background {
+  margin-bottom: 0;
+}
+
+.i18n-el .wizard-pager li h3,
+.i18n-pt .wizard-pager li h3 {
+  font-size: 0.8em;
+}
+
+/* Data Dragons */
+/* ================================================================================================================== */
+#rg-commonbox-modal {
+  box-sizing: content-box;
+}
+#rg-commonbox-modal * {
+  box-sizing: content-box;
+}
+
+
+/*  Honor Page */
+/* ================================================================================================================== */
+.honor-icon {
+  display: table;
+  height: 60px;
+  width: 60px;
+  background-image: url('../images/icons/honor-commendations.jpg');
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.honor-helpful {
+  background-position: -2px 0px;
+}
+.honor-friendly {
+  background-position: -2px -64px;
+}
+.honor-teamwork {
+  background-position: -2px -128px;
+}
+.honor-honorableopponent {
+  background-position: -2px -192px;
+}
+
+.content-background {
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+/*  Tips Pages */
+/* ================================================================================================================== */
+.image-caption {
+    padding: 8px 8px 4px 8px;
+    background: #f8f8f8;
+    text-align: center;
+    color: #555;
+}
