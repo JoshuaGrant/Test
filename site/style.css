@@ -15,7 +15,9 @@ ul {
 	color: red;
 }
 .center {
-	text-align: center;
+	width:45%;
 	list-style-position: inside;
-
+	border:1px solid red;
+	padding:1em;
+	margin:0 auto;
 }
