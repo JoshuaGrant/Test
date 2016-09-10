@@ -3,7 +3,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	background-color: #FFD700;
+	background-color: black;
 }
 
 h1 {
@@ -14,9 +14,4 @@ h1 {
 p {
 	color: blue;
 	padding-left:125px;
-}
-
-h2 {
-	margin-top: 150px;
-	text-align: center;
 }
