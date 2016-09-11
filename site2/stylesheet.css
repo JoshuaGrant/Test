@@ -7,3 +7,19 @@ h1 {
 body {
 	background-image: url('images/space.jpg');
 }
+
+.wrapper {
+	height: 370px;
+	border: 1px solid #c0c0c0;
+	text-align: center;
+	position: relative;
+}
+
+.wrapper audio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
