@@ -1,5 +1,9 @@
 h1 {
 	text-align: center;
 	font-style: sans-serif;
-	color: purple;
+	color: yellow;
+}
+
+body {
+	background-image: url('images/space.jpg');
 }
