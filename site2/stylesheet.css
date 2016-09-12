@@ -24,6 +24,6 @@ body {
 	margin: auto;
 }
 
-div > p {
+div.makeMeBlue p {
 	color: blue;
 }
