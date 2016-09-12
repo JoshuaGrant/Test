@@ -44,8 +44,3 @@ a:hover, a:active {
 	background-color: purple;
 	color: #FF00FF;
 }
-
-header > img {
-	display: block;
-	float: left;
-}
