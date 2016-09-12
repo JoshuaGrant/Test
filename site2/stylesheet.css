@@ -28,13 +28,19 @@ div.makeMeBlue p {
 	color: blue;
 }
 
-header a {
-
-}
-
+/*Styling links */
 a:link, a:visited {
 	text-decoration: none;
-	background-color: green;
+	background-color: #00FFFF;
 	border: 1px solid blue;
 	color: red;
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 1px;
+}
+
+a:hover, a:active {
+	background-color: purple;
+	color: #FF00FF;
 }
