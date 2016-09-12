@@ -27,3 +27,14 @@ body {
 div.makeMeBlue p {
 	color: blue;
 }
+
+header a {
+
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	background-color: green;
+	border: 1px solid blue;
+	color: red;
+}
