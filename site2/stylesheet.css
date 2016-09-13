@@ -45,6 +45,7 @@ a:hover, a:active {
 	color: #FF00FF;
 }
 
-header > img {
-	align: left;
+.left {
+	float: left;
+	width: 300px;
 }
