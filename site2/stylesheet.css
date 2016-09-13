@@ -77,3 +77,9 @@ a:hover, a:active {
 	border: 3px solid green;
 	padding 10px;
 }
+
+img {
+	display: block;
+	margin: auto;
+	width: 40%;
+}
