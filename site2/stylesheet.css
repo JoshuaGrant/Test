@@ -6,6 +6,8 @@ h1 {
 
 body {
 	background-image: url('images/space.jpg');
+	margin: 0;
+	padding: 0;
 }
 
 .wrapper {
