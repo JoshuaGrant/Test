@@ -46,3 +46,17 @@ a:hover, a:active {
 	background-color: purple;
 	color: #FF00FF;
 }
+
+#imgBox {
+	background-color: blue;
+	padding: 10px 10px 10px 10px;
+	border: 3px solid red;
+	margin: 40px;
+	width: 300px; /*height will adjust automatically */
+	box-sizing: border box;
+
+}
+
+#imgContent {
+
+}
