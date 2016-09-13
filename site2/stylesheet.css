@@ -44,8 +44,3 @@ a:hover, a:active {
 	background-color: purple;
 	color: #FF00FF;
 }
-
-.left {
-	float: left;
-	width: 300px;
-}
