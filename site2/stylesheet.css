@@ -68,6 +68,7 @@ a:hover, a:active {
 	border: 3px solid red;
 	margin: 20px;
 	width: 100px;
+	text-align: center;
 	box-sizing: border box;
 }
 
