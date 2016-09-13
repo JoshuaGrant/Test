@@ -33,7 +33,7 @@ div.makeMeBlue p {
 /*Styling links*/
 a:link, a:visited {
 	text-decoration: none;
-	color: red;
+	color: yellow;
 	display: block;
 }
 
@@ -45,10 +45,10 @@ a:hover, a:active {
 
 #imgBox {
 	background-color: blue;
-	padding: 10px 10px 10px 10px;
-	border: 3px solid red;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid red;
 	margin: 40px;
-	width: 300px; /*height will adjust automatically */
+	width: 150px; /*height will adjust automatically */
 	box-sizing: border box;
 
 }
