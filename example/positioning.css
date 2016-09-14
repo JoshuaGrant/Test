@@ -1,5 +1,32 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*Creates a margin on bottom of h1 */
+h1 {
+	margin-bottom: 15px;
+}
+
+div#containter {
+	background-color: #00FFFF;
+}
+
 p {
-	position: relative;
-	top: 50px;
-	left: 50px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+#p1 {
+	background-color: #A52A2A;
+}
+#p2 {
+	background-color: #DEB887;
+}
+#p3 {
+	background-color: #5F9EA0;
+}
+#p4 {
+	background-color: #FF7F50;
 }
