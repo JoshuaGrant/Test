@@ -1,4 +1,8 @@
 /*Two Column Design*/
+* {
+	box-sizing: border-box;
+}
+
 div {
 	background-color: #00FFFF;
 }
@@ -7,10 +11,11 @@ p {
 	width: 50%;
 	border: 1px solid black;
 	float: left;
+	padding: 10px;
 }
 
 #p1 {
-	background-color: #A5A2A2A;
+	background-color: #A52A2A;
 }
 
 #p2 {
