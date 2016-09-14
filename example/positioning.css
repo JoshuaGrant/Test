@@ -26,6 +26,7 @@ p {
 }
 #p2 {
 	background-color: #DEB887;
+	position: relative;
 	top: 65px;
 	left: 130px;
 }
