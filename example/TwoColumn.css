@@ -1,0 +1,22 @@
+/*Two Column Design*/
+div {
+	background-color: #00FFFF;
+}
+
+p {
+	width: 50%;
+	border: 1px solid black;
+	float: left;
+}
+
+#p1 {
+	background-color: #A5A2A2A;
+}
+
+#p2 {
+	background-color: #DEB887;
+}
+
+section {
+	clear: left;
+}
