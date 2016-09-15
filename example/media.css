@@ -21,7 +21,7 @@ p {
 }
 
 /**** Large devices only ****/
-@media (min-width: 500px) {
+@media (min-width: 1200px) {
 	#p1 {
 		width: 80%;
 	}
