@@ -181,6 +181,7 @@ section {
 }
 
 #chicken {
+	text-align: center;
 	border: 1px solid black;
 	padding: 3px;
 	margin-top: 0;
