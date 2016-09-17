@@ -9,7 +9,6 @@ h1 {
 }
 
 p {
-	position: relative;
 	border: 1px solid black;
 	background-color: #A52A2A;
 	width: 90%;
@@ -163,6 +162,7 @@ p {
 
 /* Each section is in a container separated by margins */
 .container { 
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
