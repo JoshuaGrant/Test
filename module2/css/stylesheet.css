@@ -178,6 +178,7 @@ section {
 }
 
 #chicken {
+	padding: 1px;
 	position: absolute;
 	top: 0;
 	right: 0;
