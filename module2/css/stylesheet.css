@@ -173,6 +173,8 @@ p {
 section {
 	position: relative;
 	overflow: auto;
+	/* Take up the entire container */
+	width: 100%;
 	border: 1px solid black;
 	background-color: gray;
 	padding: 5px;
