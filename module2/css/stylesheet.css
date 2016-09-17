@@ -165,6 +165,7 @@ p {
 }
 
 section {
+	height: 200px;
 	position: relative;
 	overflow: hidden;
 	/* Take up the entire container */
