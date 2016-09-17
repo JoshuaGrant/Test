@@ -184,3 +184,23 @@ section {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+#beef {
+	text-align: center;
+	width: 25%;
+	margin-left: 75%;
+	border: 1px solid black;
+	padding: 5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sushi {
+	text-align: center;
+	width: 25%;
+	margin-left: 75%;
+	border: 1px solid black;
+	padding: 5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
