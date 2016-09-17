@@ -160,6 +160,7 @@ p {
 }
 
 .container { 
+	background-color: gray;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
@@ -170,6 +171,5 @@ p {
 
 section {
 	border: 1px solid black;
-	background-color: gray;
 }
 
