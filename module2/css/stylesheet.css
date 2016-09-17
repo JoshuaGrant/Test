@@ -167,7 +167,7 @@ p {
 section {
 	height: 200px;
 	position: relative;
-	overflow: hidden;
+	overflow: auto;
 	/* Take up the entire container */
 	width: 100%;
 	border: 1px solid black;
