@@ -180,4 +180,5 @@ section {
 #chicken {
 	position: absolute;
 	top: 0;
+	overflow: hidden;
 }
