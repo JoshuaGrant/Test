@@ -179,6 +179,7 @@ section {
 
 #chicken {
 	border: 1px solid black;
+	padding: 5px;
 	position: absolute;
 	top: 0;
 	right: 0;
