@@ -172,7 +172,7 @@ p {
 
 section {
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	/* Take up the entire container */
 	width: 100%;
 	border: 1px solid black;
