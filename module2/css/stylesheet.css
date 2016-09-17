@@ -159,8 +159,8 @@ p {
 	}
 }
 
+/* Each section is in a container separated by margins */
 .container { 
-	border: 1px solid black;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
