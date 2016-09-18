@@ -156,6 +156,7 @@ p {
 
 /* Each section is in a container separated by margins */
 .container { 
+	background-color: gray;
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -172,7 +173,6 @@ section {
 	width: 100%;
 	height: 100%;
 	border: 1px solid black;
-	background-color: gray;
 	padding: 5px;
 }
 
