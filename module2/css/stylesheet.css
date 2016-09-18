@@ -156,6 +156,7 @@ p {
 
 /* Each section is in a container separated by margins */
 .container { 
+	position: relative;
 	background-color: gray;
 	border: 1px solid black;
 	margin-left: auto;
