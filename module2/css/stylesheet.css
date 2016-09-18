@@ -177,6 +177,7 @@ section {
 }
 
 #chicken {
+	top: 0;
 	text-align: center;
 	width: 25%;
 	margin-left: 75%;
