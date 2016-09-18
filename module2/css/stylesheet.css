@@ -156,8 +156,7 @@ p {
 
 /* Each section is in a container separated by margins */
 .container { 
-	position: relative;
-	background-color: gray;
+	border: none;
 	border: 1px solid black;
 	margin-left: auto;
 	margin-right: auto;
@@ -168,6 +167,7 @@ p {
 }
 
 section {
+	background-color: gray;
 	position: relative;
 	overflow: hidden;
 	/* Take up the entire container */
