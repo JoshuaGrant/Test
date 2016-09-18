@@ -160,6 +160,7 @@ p {
 
 /* Each section is in a container separated by margins */
 .container { 
+	overflow: hidden;
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
