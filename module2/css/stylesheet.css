@@ -194,6 +194,7 @@ section {
 }
 
 #beef {
+	color: #000000;
 	text-align: center;
 	width: 25%;
 	margin-left: 75%;
@@ -205,6 +206,7 @@ section {
 }
 
 #sushi {
+	color: #FF7F50;
 	text-align: center;
 	width: 25%;
 	margin-left: 75%;
