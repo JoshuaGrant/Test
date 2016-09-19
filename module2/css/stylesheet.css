@@ -20,6 +20,7 @@ p {
 /* Each row will span across the width of browser window */
 .row {
 	width: 100%;
+	border: 5px solid black;
 }
 
 /* Phone view */
